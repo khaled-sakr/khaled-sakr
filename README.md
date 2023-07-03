@@ -1,4 +1,3 @@
-![image](https://github.com/khaled-sakr/khaled-sakr/assets/136926417/f740246b-3201-4b75-b3fc-e6511bedcbdd)
 <img width="250" align="right" src="https://c.tenor.com/_DOBjnGspYAAAAAM/code-coding.gif">
 
 <h3 align="center">
@@ -25,14 +24,6 @@
 ![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git)&nbsp;
 ![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)&nbsp;
 ![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat&logo=visual-studio-code&logoColor=007ACC)&nbsp;
-![Sass](https://img.shields.io/badge/-Sass-05122A?style=flat&logo=sass)&nbsp;
-![GraphQL](https://img.shields.io/badge/-GraphQL-05122A?style=flat&logo=GraphQL)&nbsp;
-![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat&logo=MongoDB)&nbsp;
-![C++](![image](https://github.com/khaled-sakr/khaled-sakr/assets/136926417/5c345c9b-7d51-4048-9e15-ea8caf0fc236)
-)&nbsp;
-
-
-
 
 <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=khaled-sakr&show_icons=true&locale=en&layout=compact&theme=radical" alt="most used languages" />
 <br>
