@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="128x128" href="/favicon.png" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Khaled Sakr — Software Engineer. Full Stack & Mobile Developer from Egypt." />
+    <meta name="theme-color" content="#000000" />
+    <meta name="color-scheme" content="dark" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Khaled Sakr — Software Engineer" />
+    <meta property="og:description" content="Khaled Sakr — Software Engineer. Full Stack & Mobile Developer from Egypt." />
+    <meta name="twitter:card" content="summary" />
+    <title>Khaled Sakr — Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Kanit: site + hero. Newsreader, Inter Tight, Noto Kufi Arabic: the VHS project shelf. -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700;900&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Inter+Tight:wght@500;600&family=Noto+Kufi+Arabic:wght@500;800&display=swap" rel="stylesheet" />
+    <link rel="preload" as="image" href="/showcase/hero/face-rest.webp" fetchpriority="high" />
+    <!-- Structured data for the projects shelf. Keep in sync with VP in src/components/VhsProjects.tsx. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "#khaled-sakr",
+          "name": "Khaled Sakr",
+          "alternateName": "خالد صقر",
+          "jobTitle": "Full-Stack Software Engineer",
+          "description": "Full-stack and mobile software engineer from Egypt building Next.js and React web platforms, React Native apps and AI agent products.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "EG"
+          },
+          "knowsAbout": [
+            "Full-stack development",
+            "React",
+            "Next.js",
+            "React Native",
+            "Expo",
+            "TypeScript",
+            "Node.js",
+            "Django",
+            "AI agents",
+            "LLM applications",
+            "Dropshipping platforms",
+            "Quran academy platforms"
+          ],
+          "worksFor": {
+            "@id": "#etqan"
+          },
+          "sameAs": [
+            "https://github.com/khaled-sakr",
+            "https://linkedin.com/in/khaledskr"
+          ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "#etqan",
+          "name": "Etqan",
+          "alternateName": "إتقان",
+          "url": "https://www.etqanpp.com/",
+          "founder": {
+            "@id": "#khaled-sakr"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Giza",
+            "addressCountry": "EG"
+          }
+        },
+        {
+          "@type": "ProfilePage",
+          "@id": "#profile",
+          "name": "Khaled Sakr — Software Engineer",
+          "mainEntity": {
+            "@id": "#khaled-sakr"
+          },
+          "hasPart": {
+            "@id": "#projects"
+          }
+        },
+        {
+          "@type": "ItemList",
+          "@id": "#projects",
+          "name": "Live projects by Khaled Sakr",
+          "numberOfItems": 11,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "WebApplication",
+                "name": "LMFoundry",
+                "alternateName": "إل إم فاوندري",
+                "url": "https://www.lmfoundry.com/",
+                "description": "Enterprise AI platform for building, fine-tuning and running language models and AI agents in the cloud, on-premise or at the edge, with security and governance built in.",
+                "image": "/projects/lmfoundry.webp",
+                "contributor": {
+                  "@id": "#khaled-sakr"
+                },
+                "applicationCategory": "BusinessApplication",
+                "operatingSystem": "Web",
+                "keywords": "AI, LLM, AI agents, enterprise AI"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "WebApplication",
+                "name": "Agentopia",
+                "alternateName": "أجنتوبيا",
+                "url": "https://agentopia-ai.vercel.app/",
+                "description": "Next.js workspace that turns AI agents into a company: hire AI employees from six role templates, delegate through an AI manager and approve the work. Runs on the user's own Claude Code or OpenAI Codex sign-in.",
+                "image": "/projects/agentopia.webp",
+                "contributor": {
+                  "@id": "#khaled-sakr"
+                },
+                "applicationCategory": "DeveloperApplication",
+                "operatingSystem": "Web",
+                "keywords": "AI agents, multi-agent, Claude Code, OpenAI Codex, Next.js"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@type": "WebSite",
+                "name": "Etqan",
+                "alternateName": "إتقان",
+                "url": "https://www.etqanpp.com/",
+                "description": "Etqan, the software and AI studio in Giza, Egypt founded by Khaled Sakr, builds websites, iOS and Android apps and custom ERP and CRM systems for companies in Egypt and the Gulf, from first idea to launch and support.",
+                "image": "/projects/etqan-portfolio.webp",
+                "creator": {
+                  "@id": "#khaled-sakr"
+                },
+                "publisher": {
+                  "@id": "#etqan"
+                },
+                "keywords": "software agency Egypt, web development, mobile apps, Next.js, Django"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "item": {
+                "@type": "MobileApplication",
+                "name": "Tazakka",
+                "alternateName": "تزكّى",
+                "url": "https://play.google.com/store/apps/details?id=com.tazkiahapp",
+                "description": "React Native Islamic companion app that helps people wake up for Fajr: prayer times to the minute, reminders, a streak for every prayer, motivational content and step counting.",
+                "image": "/projects/tazakka-phone.webp",
+                "contributor": {
+                  "@id": "#khaled-sakr"
+                },
+                "applicationCategory": "LifestyleApplication",
+                "operatingSystem": "Android",
+                "keywords": "React Native, Islamic app, Fajr alarm, prayer reminders"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "item": {
+                "@type": "MobileApplication",
+                "name": "Hawadeet",
+                "alternateName": "حواديت",
+                "url": "https://apps.apple.com/eg/app/hawadeet/id6670516431",
+                "description": "React Native and Expo social app where Arabic speakers write stories together, one segment each, with likes, comments, chat and deep linking. On the App Store and Google Play.",
+                "image": "/projects/hawadeet-app.webp",
+                "contributor": {
+                  "@id": "#khaled-sakr"
+                },
+                "applicationCategory": "SocialNetworkingApplication",
+                "operatingSystem": "iOS, Android",
+                "keywords": "React Native, Expo, social app, Arabic"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "item": {
+                "@type": "WebApplication",
+                "name": "DS-Mate",
+                "alternateName": "دي إس ميت",
+                "url": "https://ds-mate.com/",
+                "description": "Dropshipping automation platform for Almdrasa that connects Shopify, Amazon, eBay, TikTok Shop, Walmart and more to suppliers and fulfils orders automatically. Khaled Sakr leads the Next.js frontend team.",
+                "image": "/projects/dsmate.webp",
+                "contributor": {
+                  "@id": "#khaled-sakr"
+                },
+                "applicationCategory": "BusinessApplication",
+                "operatingSystem": "Web",
+                "keywords": "dropshipping platform, ecommerce automation, Next.js, Node.js, TypeScript"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "item": {
+                "@type": "WebSite",
+                "name": "DS-Mate Tutorial",
+                "alternateName": "دليل دي إس ميت",
+                "url": "https://tutorial.ds-mate.com/",
+                "description": "Guided video onboarding for the DS-Mate dropshipping platform: five short lessons, about fifteen minutes in all, from connecting a store to fulfilling the first order.",
+                "image": "/projects/dsmate-tutorial.webp",
+                "contributor": {
+                  "@id": "#khaled-sakr"
+                },
+                "keywords": "DS-Mate, dropshipping tutorial, Next.js"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "item": {
+                "@type": "WebSite",
+                "name": "Original Software",
+                "alternateName": "أوريجينال سوفت",
+                "url": "https://original-software.com/",
+                "description": "Arabic-first online store for genuine software licences in Iraq, serving individuals, companies, banks and government institutions, with secure checkout, digital delivery and an admin dashboard.",
+                "image": "/projects/original-software.webp",
+                "contributor": {
+                  "@id": "#khaled-sakr"
+                },
+                "keywords": "ecommerce, software licences, Next.js, Django"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "item": {
+                "@type": "WebApplication",
+                "name": "Etqan Tutor",
+                "alternateName": "إتقان تيوتر",
+                "url": "https://tutor.etqanpp.com/en/",
+                "description": "Quran academy management platform for online Quran schools: students, teachers, live lessons, attendance, payments, surah-by-surah progress and parent reports. Built by Khaled Sakr with Next.js and Django.",
+                "image": "/projects/etqan-tutor.webp",
+                "creator": {
+                  "@id": "#khaled-sakr"
+                },
+                "applicationCategory": "EducationalApplication",
+                "operatingSystem": "Web",
+                "inLanguage": [
+                  "ar",
+                  "en"
+                ],
+                "keywords": "Quran academy platform, online Quran school software, Next.js, Django"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "item": {
+                "@type": "WebSite",
+                "name": "Qalamy Academy",
+                "alternateName": "أكاديمية قلمي",
+                "url": "https://qalami.tutor.etqanpp.com/",
+                "description": "Online Quran and Arabic academy running on Etqan Tutor, offering one-to-one live lessons in tajweed, Quran memorisation and Arabic for children from age five and adults.",
+                "image": "/projects/qalamy-academy.webp",
+                "contributor": {
+                  "@id": "#khaled-sakr"
+                },
+                "inLanguage": [
+                  "ar",
+                  "en"
+                ],
+                "keywords": "online Quran academy, tajweed, Quran memorisation, Arabic lessons"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 11,
+              "item": {
+                "@type": "WebSite",
+                "name": "Teslla Study",
+                "alternateName": "تسلا ستادي",
+                "url": "https://tesllastudy.com/",
+                "description": "Bilingual Arabic and English site that guides Arab students through studying in Türkiye: university shortlists, applications and visas, with partner universities in Istanbul and a free consultation.",
+                "image": "/projects/teslla-study.webp",
+                "contributor": {
+                  "@id": "#khaled-sakr"
+                },
+                "inLanguage": [
+                  "ar",
+                  "en"
+                ],
+                "keywords": "study in Turkey, bilingual website"
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <!-- No-JS / non-rendering crawlers: the project shelf is built by script. Keep in sync with VP. -->
+    <noscript>
+      <section aria-labelledby="ns-projects">
+        <h2 id="ns-projects">Projects by Khaled Sakr</h2>
+        <p>Full-stack engineer from Egypt: Next.js and React platforms, React Native apps and AI agent products.</p>
+        <ul>
+          <li><a href="https://www.lmfoundry.com/" rel="noopener">LMFoundry</a> (إل إم فاوندري): Enterprise AI platform for building, fine-tuning and running language models and AI agents in the cloud, on-premise or at the edge, with security and governance built in.</li>
+          <li><a href="https://agentopia-ai.vercel.app/" rel="noopener">Agentopia</a> (أجنتوبيا): Next.js workspace that turns AI agents into a company: hire AI employees from six role templates, delegate through an AI manager and approve the work. Runs on the user&#x27;s own Claude Code or OpenAI Codex sign-in.</li>
+          <li><a href="https://www.etqanpp.com/" rel="noopener">Etqan</a> (إتقان): Etqan, the software and AI studio in Giza, Egypt founded by Khaled Sakr, builds websites, iOS and Android apps and custom ERP and CRM systems for companies in Egypt and the Gulf, from first idea to launch and support.</li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.tazkiahapp" rel="noopener">Tazakka</a> (تزكّى): React Native Islamic companion app that helps people wake up for Fajr: prayer times to the minute, reminders, a streak for every prayer, motivational content and step counting.</li>
+          <li><a href="https://apps.apple.com/eg/app/hawadeet/id6670516431" rel="noopener">Hawadeet</a> (حواديت): React Native and Expo social app where Arabic speakers write stories together, one segment each, with likes, comments, chat and deep linking. On the App Store and Google Play.</li>
+          <li><a href="https://ds-mate.com/" rel="noopener">DS-Mate</a> (دي إس ميت): Dropshipping automation platform for Almdrasa that connects Shopify, Amazon, eBay, TikTok Shop, Walmart and more to suppliers and fulfils orders automatically. Khaled Sakr leads the Next.js frontend team.</li>
+          <li><a href="https://tutorial.ds-mate.com/" rel="noopener">DS-Mate Tutorial</a> (دليل دي إس ميت): Guided video onboarding for the DS-Mate dropshipping platform: five short lessons, about fifteen minutes in all, from connecting a store to fulfilling the first order.</li>
+          <li><a href="https://original-software.com/" rel="noopener">Original Software</a> (أوريجينال سوفت): Arabic-first online store for genuine software licences in Iraq, serving individuals, companies, banks and government institutions, with secure checkout, digital delivery and an admin dashboard.</li>
+          <li><a href="https://tutor.etqanpp.com/en/" rel="noopener">Etqan Tutor</a> (إتقان تيوتر): Quran academy management platform for online Quran schools: students, teachers, live lessons, attendance, payments, surah-by-surah progress and parent reports. Built by Khaled Sakr with Next.js and Django.</li>
+          <li><a href="https://qalami.tutor.etqanpp.com/" rel="noopener">Qalamy Academy</a> (أكاديمية قلمي): Online Quran and Arabic academy running on Etqan Tutor, offering one-to-one live lessons in tajweed, Quran memorisation and Arabic for children from age five and adults.</li>
+          <li><a href="https://tesllastudy.com/" rel="noopener">Teslla Study</a> (تسلا ستادي): Bilingual Arabic and English site that guides Arab students through studying in Türkiye: university shortlists, applications and visas, with partner universities in Istanbul and a free consultation.</li>
+        </ul>
+      </section>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

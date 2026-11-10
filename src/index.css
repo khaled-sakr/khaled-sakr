@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+/* Short landscape viewports (phones turned sideways) */
+@custom-variant short (@media (max-height: 500px));
+
+@theme static {
+  /* static: every token is emitted on :root so showcase.css can use var(--color-*) too */
+  --font-sans: 'Kanit', system-ui, -apple-system, sans-serif;
+  /* Drop Tailwind's default colours: only the five palette colours below (and
+     alpha/mixes of them) exist, so an off-palette utility can't sneak back in. */
+  --color-*: initial;
+  /* The palette. Every colour on the site is one of these, an alpha of one, or
+     a color-mix() of two. Contrast (WCAG): snow/black 20.3, slate/black 11.0,
+     orchid/black 4.54, rose/black 3.70 (large text + UI only), snow/rose 5.50,
+     snow/orchid 4.47 (large text only: use black on orchid), rose/snow 5.50. */
+  --color-black: #000000;
+  --color-rose: #ba2c73;   /* Hot Rose */
+  --color-orchid: #ce26b2; /* Vivid Orchid */
+  --color-slate: #bbbbbf;  /* Pale Slate */
+  --color-snow: #fffafb;   /* Snow */
+  /* Solid mixes of the palette. Every large surface is dark (luminance < 0.01):
+     snow and slate are only for text, borders and small accents. */
+  --color-panel: color-mix(in srgb, var(--color-snow) 6%, var(--color-black));       /* neutral card */
+  --color-sheet: color-mix(in srgb, var(--color-rose) 8%, var(--color-black));       /* Work sheet */
+  --color-shelf: color-mix(in srgb, var(--color-orchid) 10%, var(--color-black));    /* VHS shelf + detail */
+  --color-card-rose: color-mix(in srgb, var(--color-rose) 16%, var(--color-black));
+  --color-card-orchid: color-mix(in srgb, var(--color-orchid) 15%, var(--color-black));
+  --color-card-slate: color-mix(in srgb, var(--color-slate) 10%, var(--color-black));
+  --color-rose-deep: color-mix(in srgb, var(--color-rose) 60%, var(--color-black));   /* dark rose surface, snow text 10.6 */
+  --color-orchid-dim: color-mix(in srgb, var(--color-orchid) 85%, var(--color-black)); /* snow text 5.8 */
+  --color-orchid-deep: color-mix(in srgb, var(--color-orchid) 60%, var(--color-black)); /* snow text 9.3 */
+  /* Small accent text on dark: orchid lifted with snow (>= 6:1 on every dark surface;
+     plain orchid is 4.2-4.5 and rose 3.4-3.7 there, so those stay for large text/UI) */
+  --color-orchid-soft: color-mix(in srgb, var(--color-orchid) 70%, var(--color-snow));
+  /* Floating pill shadow (navbar) */
+  --shadow-nav: 0 8px 24px rgb(0 0 0 / 0.45);
+}
+
+@layer base {
+  html {
+    /* Keep anchor targets clear of the fixed navbar (top-4 + ~56px pill) */
+    scroll-padding-top: 6rem;
+  }
+
+  /* Full-screen sections with their own header land flush with the top
+     (the floating navbar steps aside over them, see Navbar). */
+  #hero,
+  #projects {
+    scroll-margin-top: -6rem;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--color-snow);
+    background-color: var(--color-black);
+  }
+
+  html {
+    scrollbar-color: var(--color-rose) var(--color-black);
+  }
+
+  /* Orchid ring: >= 3:1 on black (4.5), panel (4.2) and snow (4.5) */
+  :focus-visible {
+    outline: 2px solid var(--color-orchid);
+    outline-offset: 2px;
+  }
+
+  /* Rose / deep surfaces: orchid is too close to them, so the ring turns snow */
+  .on-dark :focus-visible {
+    outline-color: var(--color-snow);
+  }
+
+  ::selection {
+    background-color: var(--color-rose);
+    color: var(--color-snow);
+  }
+}
