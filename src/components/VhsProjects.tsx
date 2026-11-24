@@ -182,6 +182,17 @@ const VP: Project[] = [
     shots: [shot('teslla-study', 'The Teslla Study home page.', 1600, 894)],
   },
   {
+    id: 'islam', title: 'Islam Badran', ar: 'إسلام بدران', sub: 'ISLAM BADRAN', cat: 'Agency', stack: 'HTML · CSS · JAVASCRIPT', role: 'Engineer', status: 'Live',
+    url: 'https://www.islammohamed.online/', btn: 'Open islammohamed.online', btnAr: 'افتح الموقع',
+    line: 'A full-stack engineer’s portfolio, told as eight case studies',
+    who: "Companies in Egypt and the Gulf looking for a full-stack engineer for web, mobile or AI work",
+    features: ["A developer-card hero: name, focus (web, mobile, AI) and contact on a lanyard badge", "Eight case studies, from Agentopia and Etqan Tutor to LMFoundry and Alreef", "A case-study carousel with previous and next", "About, services and a “discuss a project” contact"],
+    platforms: "Web, hand-built in HTML, CSS and JavaScript, hosted on Vercel.",
+    fact: "Eight case studies across AI, education and e-commerce.",
+    syn: 'A full-stack engineer needs one place that shows the work. This is the portfolio of Islam Badran, a full-stack software engineer at ETQAN building web platforms, mobile apps and AI products for companies in Egypt and the Gulf, with case studies from Agentopia to Etqan Tutor and Alreef.',
+    shots: [shot('islam-portfolio', 'The developer-card hero of islammohamed.online.', 1600, 805)],
+  },
+  {
     id: 'lmfoundry', title: 'LMFoundry', ar: 'إل إم فاوندري', sub: 'LMFOUNDRY', cat: 'AI', stack: 'LLMS · AI AGENTS · ON-PREMISE', role: 'Engineer', status: 'Live',
     url: 'https://www.lmfoundry.com/', btn: 'Open lmfoundry.com', btnAr: 'افتح الموقع',
     line: 'Build and run your own language models, wherever your data lives',

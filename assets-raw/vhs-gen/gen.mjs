@@ -28,6 +28,7 @@ const P = [
   { id: 'qalamy', t: 'QALAMY ACADEMY', lines: ['QALAMY', 'ACADEMY'], bg: C.black, fg: I, paper: '#d8b45a', acc: '#1e4b37', ground: '#1e4b37', cover: 'qalamy-academy' },
   { id: 'tesla', t: 'TESLLA STUDY', lines: ['TESLLA', 'STUDY'], bg: '#ffffff', paper: '#ffffff', fg: C.ink, acc: '#c8302c', ground: '#c8302c', cover: 'teslla-study' },
   { id: 'dsmatetutorial', t: 'DS-MATE TUTORIAL', lines: ['DS-MATE', 'TUTORIAL'], bg: C.blue, fg: I, paper: '#eef5dc', acc: '#2f5a33', ground: '#2f5a33', cover: 'dsmate-tutorial' },
+  { id: 'islam', t: 'ISLAM BADRAN', lines: ['ISLAM', 'BADRAN'], bg: '#1a2150', fg: I, paper: '#dfe3f0', acc: '#1a2150', ground: '#1a2150', cover: 'islam-portfolio', soft: true },
 ];
 const logo = (id) => `file://${pub}/logos/${id}.webp`;
 
