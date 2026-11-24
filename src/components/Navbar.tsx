@@ -1,15 +1,20 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const navLinks = [
+type NavLink = { label: string; href: string; external?: boolean; download?: boolean };
+
+const CV_FILE = 'Khaled_Sakr_Software_Engineer.pdf';
+
+const navLinks: NavLink[] = [
   { label: 'Khaled Sakr', href: '#hero' },
   { label: 'Highlights', href: '#highlights' },
   { label: 'Projects', href: '#projects' },
   { label: 'LinkedIn', href: 'https://linkedin.com/in/khaledskr', external: true },
+  { label: 'Download CV', href: `/${CV_FILE}`, download: true },
   { label: 'Get in touch', href: '#contact' },
 ];
 
-const sectionIds = navLinks.filter((l) => !l.external).map((l) => l.href.slice(1));
+const sectionIds = navLinks.filter((l) => l.href.startsWith('#')).map((l) => l.href.slice(1));
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -128,13 +133,14 @@ export default function Navbar() {
       >
         <ul className="flex items-center gap-0.5 lg:gap-1">
           {navLinks.map((link) => {
-            const isActive = !link.external && activeId === link.href.slice(1);
+            const isActive = link.href.startsWith('#') && activeId === link.href.slice(1);
             return (
               <li key={link.label}>
                 <a
                   href={link.href}
                   target={link.external ? '_blank' : undefined}
                   rel={link.external ? 'noopener noreferrer' : undefined}
+                  download={link.download ? CV_FILE : undefined}
                   aria-current={isActive ? 'location' : undefined}
                   className={`block whitespace-nowrap px-3 lg:px-5 py-2.5 rounded-full text-sm font-medium transition-colors duration-200 ${
                     isActive ? 'text-snow bg-rose' : 'text-snow hover:bg-snow/10'
@@ -196,6 +202,7 @@ export default function Navbar() {
                     href={link.href}
                     target={link.external ? '_blank' : undefined}
                     rel={link.external ? 'noopener noreferrer' : undefined}
+                    download={link.download ? CV_FILE : undefined}
                     onClick={() => closeMenu(false)}
                     className="flex items-center min-h-11 px-4 py-2 rounded-lg text-2xl short:text-xl font-bold text-snow hover:text-orchid transition-colors"
                   >

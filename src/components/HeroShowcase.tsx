@@ -12,6 +12,7 @@ const navLinks = [
   { label: 'About', href: '#highlights' },
   { label: 'Projects', href: '#projects' },
   { label: 'Contact', href: '#contact' },
+  { label: 'CV', href: '/Khaled_Sakr_Software_Engineer.pdf', download: true },
 ];
 
 const fade = (y: string): CSSProperties => ({ ['--fade-y' as string]: y });
@@ -85,7 +86,7 @@ export default function HeroShowcase() {
       <section className="hero" id="hero" ref={heroRef}>
         <nav className="nav fade-in" data-delay="0" aria-label="Sections" data-nav-hide>
           {navLinks.map((l) => (
-            <a key={l.href} href={l.href}>
+            <a key={l.href} href={l.href} download={l.download ? 'Khaled_Sakr_Software_Engineer.pdf' : undefined}>
               {l.label}
             </a>
           ))}
